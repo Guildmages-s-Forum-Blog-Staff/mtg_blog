@@ -104,7 +104,7 @@ theme: redefine
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@github.com:Guildmages-s-Forum-Blog-Staff/mtg_blog.git
+  repository: git@github.com:Guildmages-Forum-Blog-Staff/mtg_blog.git
   branch: gp_deploy
 
 # Neat
