@@ -5,14 +5,6 @@
         <span class="mobile"><%= date(articleObject.date, is_post() ? `${config.date_format} ${config.time_format}` : `${config.date_format}`).replace(" 00:00:00", "").replace(":00", "") %></span>
         <span class="hover-info"><%= __("create_time") %></span>
     </span>
-    <% if (articleObject.updated && articleObject.updated !== articleObject.date) { %>
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop"><%= date(articleObject.updated, is_post() ? `${config.date_format} ${config.time_format}` : `${config.date_format}`).replace(" 00:00:00", "").replace(":00", "") %></span>
-            <span class="mobile"><%= date(articleObject.updated, is_post() ? `${config.date_format} ${config.time_format}` : `${config.date_format}`).replace(" 00:00:00", "").replace(":00", "") %></span>
-            <span class="hover-info"><%= __("update_time") %></span>
-        </span>
-    <% } %>
 
     <% if (articleObject.categories.length) { %>
         <span class="article-categories article-meta-item">
@@ -39,7 +31,7 @@
     <% } %>
     <% if (articleObject.tags.length) { %>
         <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
+            <i class="fa-solid fa-keyboard"></i>&nbsp;
             <ul>
                 <% articleObject.tags.forEach((tag, i) => { %>
                     <li>
