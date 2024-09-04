@@ -94,7 +94,7 @@ aka [中二紳士想會打牌](https://www.facebook.com/bruce1235566)，很喜�
 - 前[Mystic Zone](https://mysticzonetw.blogspot.com/)主編
 - 喜歡Arena限制賽、近代賽中速、與控制套牌
 
-## [傑利羊](/tags/JerryYang)
+## [傑利羊](/tags/jerryyang)
 
 依克黎：巨獸時空（IKO）時因為大怪獸入坑，目前是構築賽跟限制賽都會碰，希望有朝一日可以去打 PT，如果有想要討論或練習都歡迎！
 
@@ -108,7 +108,7 @@ a.k.a [特別亂打](https://www.facebook.com/egavasmtg)，努力不要亂打的
 [Spark Double](https://linktr.ee/sparkdouble)的主持人之一。
 近幾年不斷以業餘選手之身努力挑戰專業競賽的領域。所涉獵賽制包含標準、先驅、近代、薪傳以及限制賽。擅長純快攻與純控制套牌，其次則是節奏套牌。近期正在磨練中速價值交換體系。目前認為限制賽才是在魔風中獲得快樂的真理。
 
-## faintmama
+## [faintmama](/tags/faintmama/)
 
 沒有aka，本名[王靖](https://www.facebook.com/loudsidewang/)。
 臺北征服EDH愛好團無薪長工；時報出版、鏡文學授權作者。
