@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "ejs": "^3.1.9",
-    "hexo": "^6.3.0",
+    "hexo": "^7.3.0",
     "hexo-all-minifier": "^0.5.2",
     "hexo-autonofollow": "^1.0.1",
     "hexo-deployer-git": "^4.0.0",
