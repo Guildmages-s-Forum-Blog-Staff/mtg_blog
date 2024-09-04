@@ -10,7 +10,7 @@
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
   # Site title
-  title: Guildmages' Forum
+  title: Guildmages' Forum 魔風集會所
   # Author name
   author: Guildmages' Forum Staff
   # Site URL
@@ -194,12 +194,12 @@ navbar:
     # Status:
     #   path: https://status.evanluo.top/
     #   icon: fa-regular fa-chart-bar
-    Tags:
-      path: /tags
-      icon: fa-regular fa-tags
-    # Categories:
-    #   path: /categories
-    #   icon: fa-regular fa-folder
+    # Tags:
+    #   path: /tags
+    #   icon: fa-regular fa-tags
+    Categories:
+      path: /categories
+      icon: fa-regular fa-folder
     About Us:
       path: /about
       icon: fa-regular fa-user
