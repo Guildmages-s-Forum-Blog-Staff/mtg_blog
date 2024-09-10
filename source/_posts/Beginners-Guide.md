@@ -8,8 +8,8 @@ authors:
 categories:
   - "Others"
   - "Beginner"
-cover: "https://guildmagesforum.tw/images/Urzas-Tome.jpg"
-thumbnail: "https://guildmagesforum.tw/images/Urzas-Tome.jpg"
+cover: "https://guildmagesforum.tw/images/Beginners-Guide/Urzas-Tome.jpg"
+thumbnail: "https://guildmagesforum.tw/images/Beginners-Guide/Urzas-Tome.jpg"
 excerpt: "從零開始的新手入坑指引"
 ---
 
@@ -17,7 +17,7 @@ excerpt: "從零開始的新手入坑指引"
 
 本文是面向剛入坑的零經驗新手，幫助新手理解MTG的基本規則、以及提供查詢資料時所需的資源。歡迎大家分享這篇文章、陪伴新手參與遊戲，希望這篇文章能因此成為新人的萬用百科。
 
-![](/images/Urzas-Tome.jpg)
+![](/images/Beginners-Guide/Tome-of-the-Guildpact-Ravnica-Allegiance.jpg)
 
 ---
 
@@ -421,7 +421,7 @@ MTG 中有許多的異能都被濃縮成了一個關鍵字，這麼做的好處�
 
 ## 賽制介紹
 
-![賽制](https://www.artofmtg.com/wp-content/uploads/2021/03/Strixhaven-Stadium-Strixhaven-MtG-Art.jpg)
+![](/images/Beginners-Guide/Strixhaven-Stadium-Strixhaven.jpg)
 
 MTG 的賽制可以分為構築賽 ＆ 限制賽兩大類。構築賽使用的是玩家自行構築的套牌，並且依照可用牌池的大小與其他構築規則，又再分為數種賽制。限制賽玩家無須準備自己的套牌，遊戲方式為玩家現場打開補充包，並使用這些補充包組出一副套牌對戰，限制賽依照規則可再分為現開＆輪抽兩種。
 
@@ -499,7 +499,7 @@ MTG 的賽制可以分為構築賽 ＆ 限制賽兩大類。構築賽使用的�
 
 ## 資源連結
 
-![網站](https://www.artofmtg.com/wp-content/uploads/2021/02/Frantic-Search-Ultimate-Masters-MtG-Art.jpg)
+![](/images/Beginners-Guide/Frantic-Search.jpg)
 
 本章節會介紹幾個常用的 MTG 相關資源網站，以下各網站標題同時為網站超連結。
 
