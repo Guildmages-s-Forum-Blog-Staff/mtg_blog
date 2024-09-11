@@ -204,7 +204,12 @@ hexo.extend.tag.register('mtgcard', async (args) => {
       card['scryfall_uri'] = '#';
     }
 
-    let html = render(tpl.image, { 'IMG': card.image_uris.large });
+    let html;
+    if (card.image_uris !== undefined) {
+      html = render(tpl.image, { 'IMG': card.image_uris.large });
+    } else {
+      html = render(tpl.image, { 'IMG': card.card_faces[0].image_uris.large });
+    }
     if (argv.tooltip) {
       html = render(tpl.tooltip, {
         'URL': card.scryfall_uri,
@@ -308,7 +313,7 @@ hexo.extend.tag.register('mtglist', async (args, content) => {
       } else if (entry.includes('=')) {
         let tmp = entry.split('=');
         argument[tmp[0]] = tmp[1] === 'true';
-      } 
+      }
     });
     if (undefined === argument.tooltip) argument.tooltip = false;
     if (undefined === argument.symbols) argument.symbols = false;
@@ -461,7 +466,7 @@ hexo.extend.tag.register('mtglist', async (args, content) => {
   } catch (err) {
     return `<p>Failed to rendered card list: <br />${content}</p>`;
   }
-}, { 
+}, {
   ends: true,
   async: true
 });
