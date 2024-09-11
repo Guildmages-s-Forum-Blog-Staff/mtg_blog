@@ -204,18 +204,20 @@ hexo.extend.tag.register('mtgcard', async (args) => {
       card['scryfall_uri'] = '#';
     }
 
-    let html;
+    let html, cardImageUrl;
     if (card.image_uris !== undefined) {
-      html = render(tpl.image, { 'IMG': card.image_uris.large });
+      cardImageUrl = card.image_uris.large;
     } else {
-      html = render(tpl.image, { 'IMG': card.card_faces[0].image_uris.large });
+      cardImageUrl = card.card_faces[0].image_uris.large;
     }
     if (argv.tooltip) {
       html = render(tpl.tooltip, {
         'URL': card.scryfall_uri,
         'NAME': argv.name,
-        'IMG': render(tpl.tooltip_image, { 'IMG': card.image_uris.large })
+        'IMG': render(tpl.tooltip_image, { 'IMG': cardImageUrl })
       });
+    } else {
+      html = render(tpl.image, { 'IMG': cardImageUrl });
     }
     return html;
   } catch (err) {
@@ -273,13 +275,20 @@ hexo.extend.tag.register('mtgpick', async (args) => {
       path: scryfallAPIPath
     });
     let card = data;
-    let html = render(tpl.image, { 'IMG': card.image_uris.large });
+    let html, cardImageUrl;
+    if (card.image_uris !== undefined) {
+      cardImageUrl = card.image_uris.large;
+    } else {
+      cardImageUrl = card.card_faces[0].image_uris.large;
+    }
     if (argv.tooltip) {
       html = render(tpl.tooltip, {
         'URL': card.scryfall_uri,
         'NAME': card.name,
-        'IMG': render(tpl.tooltip_image, { 'IMG': card.image_uris.large })
+        'IMG': render(tpl.tooltip_image, { 'IMG': cardImageUrl })
       });
+    } else {
+      html = render(tpl.image, { 'IMG': cardImageUrl });
     }
     return html;
   } catch (err) {
@@ -301,6 +310,7 @@ hexo.extend.tag.register('mtgpick', async (args) => {
  * count#cardname#edition;
  * ....
  * {% endmtglist %}
+ * @todo Fix Double-faced cards' image_url.
  */
 hexo.extend.tag.register('mtglist', async (args, content) => {
   let argv = ((argArray) => {
