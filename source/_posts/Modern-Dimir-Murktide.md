@@ -1,7 +1,7 @@
 ---
 
 title: "藍黑龍侯新科技 — 亙古回聲"
-date: "2024-09-13 12:10:06"
+date: "2024-09-13 12:20:21"
 tags:
   - "cephille"
   - "jeffchen"
@@ -238,7 +238,7 @@ MH3 剛發售後的 Dimir Murktide 會帶上 [Deep Analysis](https://scryfall.co
 | -3 {% mtgcard "Preordain" "m11" tooltip=true %} | +1 {% mtgcard "Toxic Deluge" "mh3" tooltip=true %} |
 |  | +2 {% mtgcard "Surgical Extraction" "nph" tooltip=true %} |
 
-基本上就是把虧牌的FON，應對面偏小的 {% mtgcard "Spell Pierce" "neo" tooltip=true %} 下掉，換上更多的掃場；備牌的 {% mtgcard "Legion's End" "m20" tooltip=true %} 一張身兼解 + 腦切的效果，使用起來相當令人滿意。由於這個換法我們只剩下四張正康可以對應對手難處理的魔戒、泰坦，所以正康基本上要留給這些，生物用掃場跟殺去解。 {% mtgcard "Surgical Extraction" "nph" tooltip=true %} 則在對手的魔戒、泰坦、或重要的二費威脅如 {% mtgcard "Ajani, Nacatl Pariah // Ajani, Nacatl Avenger" tooltip=true %} 、 {% mtgcard "Amped Raptor" "nph" tooltip=true %} 進墳時摘掉他們，讓我們後續顧慮減少，但仍需繼續盯緊重點牌張，對手被切掉一邊還是有機會靠剩下來的威脅玩死我們。
+基本上就是把虧牌的FON，應對面偏小的 {% mtgcard "Spell Pierce" "neo" tooltip=true %} 下掉，換上更多的掃場；備牌的 {% mtgcard "Legion's End" "m20" tooltip=true %} 一張身兼解 + 腦切的效果，使用起來相當令人滿意。由於這個換法我們只剩下四張正康可以對應對手難處理的魔戒、泰坦，所以正康基本上要留給這些，生物用掃場跟殺去解。 {% mtgcard "Surgical Extraction" "nph" tooltip=true %} 則在對手的魔戒、泰坦、或重要的二費威脅如 {% mtgcard "Ajani, Nacatl Pariah // Ajani, Nacatl Avenger" tooltip=true %} 、 {% mtgcard "Amped Raptor" tooltip=true %} 進墳時摘掉他們，讓我們後續顧慮減少，但仍需繼續盯緊重點牌張，對手被切掉一邊還是有機會靠剩下來的威脅玩死我們。
 
 此外， {% mtgcard "Spell Snare" "dis" tooltip=true %} 仍然是這個對局的 MVP 。
 
