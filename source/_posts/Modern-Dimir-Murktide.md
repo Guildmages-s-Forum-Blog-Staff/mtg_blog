@@ -1,7 +1,7 @@
 ---
 
 title: "藍黑龍侯新科技 — 亙古回聲"
-date: "2024-09-13 12:20:21"
+date: "2024-09-13 14:50:17"
 tags:
   - "cephille"
   - "jeffchen"
@@ -24,7 +24,7 @@ authors:
 
 今天會寫這篇文章，一方面是我在 2024 年 9 月 8 日 Cardmaster 的 MITQ#8 中取得四強以及MIT正賽的資格；另一方面是覺得這麼好玩的東西不能只有我知道~~所以來造福大眾~~，希望亙古回聲，可以成為藍黑龍侯的一個新變體，也成為對手們當晚的惡夢 （開玩笑的XD）
 
-> 2024 年 9 月 8 日 Cardmaster 的 MITQ#8 的賽報有興趣的可以來看 [這篇](https://www.facebook.com/share/p/tsPYZy1GtJczQCLY/) ，有興趣多了解一些我的藍黑龍侯的心路歷程的話，可以接著看粉專的前一則貼文，不再贅述。
+> 2024 年 9 月 8 日 Cardmaster 的 MITQ#8 的賽報有興趣的可以來看 [這篇](https://www.facebook.com/share/p/Pqfn3YS5wtVrayFA/) ，有興趣多了解一些我的藍黑龍侯的心路歷程的話，可以接著看粉專的前一則貼文，不再贅述。
 
 ## 近代的變化
 
