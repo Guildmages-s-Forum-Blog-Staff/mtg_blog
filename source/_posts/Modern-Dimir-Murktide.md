@@ -1,7 +1,7 @@
 ---
 
 title: "藍黑龍侯新科技 — 亙古回聲"
-date: "2024-09-13 10:51:48"
+date: "2024-09-13 12:10:06"
 tags:
   - "cephille"
   - "jeffchen"
@@ -20,7 +20,7 @@ authors:
 
 大家好，最近我以藍黑龍侯參賽近代的 MITQ，成績如海波浪般起起伏伏，某一天 [jeffchen](https://guildmagesforum.tw/tags/jeffchen/) 推薦我一個超酷的黑科技 — [Echo of Eons（亙古回聲）](https://scryfall.com/card/mh1/46/echo-of-eons)，頓時我如獲至寶，對了！就是這個！！！我那時心裡激動之情難以言喻，輸掉比賽的不愉快頓時煙消雲散；取而代之的是想著我一定要玩這個好玩的 combo。附帶一提，當我的心態從 Spike 加入一點 Timmy 的時候，我的心態突然變得格外的健全與輕鬆。
 
-> 關於Spike、Johnny、Timmy這經典的玩家分類，大家有興趣可以去看看這篇翻譯文章〈[Timmy, Johnny and Spike —談MTG card designer眼中的玩家分類](https://icebolt.pixnet.net/blog/post/27873725)〉。我自己就是有點 Spike + Timmy 型的人，難怪這個 combo 讓我如此興奮XD
+> 關於Spike、Johnny、Timmy這經典的玩家分類，大家有興趣可以去看看這篇翻譯文章 〈[Timmy, Johnny and Spike —談MTG card designer眼中的玩家分類](https://icebolt.pixnet.net/blog/post/27873725)〉 。我自己就是有點 Spike + Timmy 型的人，難怪這個 combo 讓我如此興奮XD
 
 今天會寫這篇文章，一方面是我在 2024 年 9 月 8 日 Cardmaster 的 MITQ#8 中取得四強以及MIT正賽的資格；另一方面是覺得這麼好玩的東西不能只有我知道~~所以來造福大眾~~，希望亙古回聲，可以成為藍黑龍侯的一個新變體，也成為對手們當晚的惡夢 （開玩笑的XD）
 
@@ -62,8 +62,6 @@ MH3 剛發售後的 Dimir Murktide 會帶上 [Deep Analysis](https://scryfall.co
 
 2024 年 8 月 26 日因為 [Grief](https://scryfall.com/card/mh2/87/grief) 被ban，主牌的 [Subtlety](https://scryfall.com/card/mh2/67/subtlety) 變成非必要，多出來的卡位就可以來實驗新玩具囉！
 
-<!---交給jeffchen補充--->
-
 #### 為什麼要帶這個Combo？
 
 因為愛！因為好玩！~~因為我想用弓箭手射爆對手！~~
@@ -80,9 +78,9 @@ MH3 剛發售後的 Dimir Murktide 會帶上 [Deep Analysis](https://scryfall.co
 - [Orcish Bowmaster](https://scryfall.com/card/ltr/103/orcish-bowmasters)：對任意目標造成共 7 點傷害，你可以任意分配，同時並 Amass 7 。
 - [Sheoldred, the Apocalypse](https://scryfall.com/card/dmu/107/sheoldred-the-apocalypse)：對手失去 14 點生命，我們補 14 點生命，簡單暴力。
 
-而上述弓箭手的情況中，如果你場上已經有之前先進場的 Amass 1 + 半獸人 token 的話，你會順便把牠灌到造 8/8 以上；然後只要你是在第一主階段做的，接下來這隻巨獸就可以接著攻擊出去，順利的話跟黑魔判的狀況造成的傷害也差不多。
+而上述弓箭手的情況中，如果你場上已經有之前先進場的 Amass 1 + 半獸人 token 的話，你會順便把牠灌到 8/8 以上；然後只要你是在第一主階段做的，接下來這隻巨獸就可以接著攻擊出去，順利的話跟黑魔判的狀況造成的傷害也差不多。
 
-然後，別忘了這些效果是可以疊加的，兩隻以上，快樂加倍！
+然後，別忘了這些效果是可以疊加的，兩隻以上的弓箭手，快樂加倍！
 
 #### 為什麼是帶 2 張亙古回聲？
 
@@ -209,9 +207,9 @@ MH3 剛發售後的 Dimir Murktide 會帶上 [Deep Analysis](https://scryfall.co
 
 ### Gameplan：寧可一思進，莫在一思停
 
-這邊引述了電影〈一代宗師〉中的台詞作為小節標題，主要是希望能讓讀者們意識到，深謀遠慮、以及堅持深思後的遊戲計畫，是何其重要的事！
+這邊引述了電影 〈一代宗師〉 中的台詞作為小節標題，主要是希望能讓讀者們意識到，深謀遠慮、以及堅持深思後的遊戲計畫，是何其重要的事！
 
-試想，假如你場上只有兩張站著且能產藍的地，手上有龍侯、墳場有 4 張牌；而你起動了找地地且找了刺探地想要拚刺探接著拍龍侯，結果你刺探時看到了牌庫頂是一張你需要的牌，比如說 [Psychic Frog](https://scryfall.com/card/mh3/199/psychic-frog) 或 [Counterspell](https://scryfall.com/card/cmm/81/counterspell) ，如果你這時 **停** 了下來，鬼迷心竅地告訴自己，這張牌留著多好而把它放在了牌庫頂，回過神你才想到，喔不！我的龍侯這回合無法登場了...。
+試想，假如你場上只有兩張站著且能產藍的地，手上有龍侯、墳場有 4 張牌；而你已起動了找地地，且找了刺探地進場想要拚刺探接著拍龍侯，結果你刺探時看到了牌庫頂是一張你需要的牌，比如說 [Psychic Frog](https://scryfall.com/card/mh3/199/psychic-frog) 或 [Counterspell](https://scryfall.com/card/cmm/81/counterspell) ，如果你這時 **停** 了下來，鬼迷心竅地告訴自己，這張牌留著多好而把它放在了牌庫頂，回過神你才想到，喔不！我的龍侯這回合無法登場了...。
 
 如果你已經想清楚你這回合要拍龍侯了，那為什麼你要扯自己後腿呢？若你預測、或已知對手手中有康、有 Subtlety 的話，你就不會選擇拍龍侯，除非你要拿你的龍侯去當誘餌...。而類似這樣早想三步的預判，進而凝鍊出屬於你自己的 gameplan ；而當你想清楚了，除非出現重大到必須改變 gameplan 的關鍵變化，否則，我們都應該盡可能地堅持自己的 gameplan。
 
@@ -222,8 +220,6 @@ MH3 剛發售後的 Dimir Murktide 會帶上 [Deep Analysis](https://scryfall.co
 ### Phlage, Titan of Fire's Fury 
 
 你場上有青蛙，對面正拍紅白泰坦，且有四費開放可以接著做 escape 的話，你要先起動青蛙的異能拿一個 trigger 、然後再康泰坦、接著回應自己青蛙的異能異能結算前，去用剋墳吃掉泰坦，才不會給對面做 escape 的優先權。
-
-<!---交給jeffchen補充--->
 
 ## 換備策略
 
