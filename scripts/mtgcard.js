@@ -94,6 +94,10 @@ let render = (tpl, data) => {
   return tpl;
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function httpRequest(params, postData) {
   return new Promise((resolve, reject) => {
     let req = http.request(params, (res) => {
@@ -197,6 +201,7 @@ hexo.extend.tag.register('mtgcard', async (args) => {
       },
       path: scryfallAPIPath
     });
+    await sleep(100);
     let card = data.data[0];
     if (undefined === card) {
       argv.tooltip = false;
@@ -274,6 +279,7 @@ hexo.extend.tag.register('mtgpick', async (args) => {
       },
       path: scryfallAPIPath
     });
+    await sleep(100);
     let card = data;
     let html, cardImageUrl;
     if (card.image_uris !== undefined) {
