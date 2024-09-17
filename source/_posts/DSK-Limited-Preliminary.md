@@ -1,6 +1,6 @@
 ---
 title: "暮悲邸限制賽初探"
-date: "2024-09-17 12:33:42"
+date: "2024-09-17 12:40:19"
 tags:
   - "cephille"
 categories:
@@ -115,7 +115,7 @@ U 卡的武具 {% mtgcard "Baseball Bat"  tooltip=true %} 鼓勵你生物進攻�
 
 ![](https://i.imgur.com/amydikq.jpeg)
 
-然而，單純靠進攻讓後存活來觸發生還的效果，其實還是不太穩定。因此，另一邊更穩定的生還觸發的來源也值得我們留意，如綠色的死亡割草機 {% mtgcard "Hedge Shredder" tooltip=true %} 、白色的幽浮 {% mtgcard "Hedge Shredder" tooltip=true %} 這兩台載具的搭載（crew）異能，都可以讓你主動橫置具生還異能的生物們 （survivors）！而像 {% mtgcard "Coordinated Clobbering" tooltip=true %} 這樣的解牌，本來要橫置生物算是副作用，但你橫置的若是 survivors，那可就不一樣了；同樣的概念可套用在 {% mtgcard "Fear of Exposure" tooltip=true %} 上，若你能一二回接連拍出兩隻 survivors ，三回接著出 {% mtgcard "Fear of Exposure" tooltip=true %} ，那節奏更是好到飛起來！
+然而，單純靠進攻讓後存活來觸發生還的效果，其實還是不太穩定。因此，另一邊更穩定的生還觸發的來源也值得我們留意，如綠色的死亡割草機 {% mtgcard "Hedge Shredder" tooltip=true %} 、白色的幽浮 {% mtgcard "Unidentified Hovership" tooltip=true %} 這兩台載具的搭載（crew）異能，都可以讓你主動橫置具生還異能的生物們 （survivors）！而像 {% mtgcard "Coordinated Clobbering" tooltip=true %} 這樣的解牌，本來要橫置生物算是副作用，但你橫置的若是 survivors，那可就不一樣了；同樣的概念可套用在 {% mtgcard "Fear of Exposure" tooltip=true %} 上，若你能一二回接連拍出兩隻 survivors ，三回接著出 {% mtgcard "Fear of Exposure" tooltip=true %} ，那節奏更是好到飛起來！
 
 附帶一提， R 卡的 {% mtgcard "Enduring Vitality" tooltip=true %} 的被動效果可以讓你的生物變成五色 mana 頭，那你的 survivors 們產完費不就躺下了嗎？那又可以再賺一波生還價值囉！以上沒有明文寫出的小搭配在 DSK 限制賽還很多，就留給讀者們去開發囉！
 
