@@ -1,4 +1,4 @@
-const http = require('https');
+const http = require("https");
 
 let tpl = {
   list: `<div class="mtable">
@@ -82,20 +82,20 @@ let tpl = {
     opacity: 1;
     z-index: unset;
   }
-</style>`
+</style>`,
 };
 
-let userAgentString = 'curl/8.5.0';  // Ubuntu 24.04.
+let userAgentString = "curl/8.5.0"; // Ubuntu 24.04.
 
 let render = (tpl, data) => {
   for (let prop in data) {
     tpl = tpl.replace(`##${prop}##`, data[prop]);
   }
   return tpl;
-}
+};
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function httpRequest(params, postData) {
@@ -105,8 +105,8 @@ function httpRequest(params, postData) {
         return reject(new Error(`statusCode=${res.statusCode}`));
       }
       let body = [];
-      res.on('data', (chunk) => body.push(chunk));
-      res.on('end', () => {
+      res.on("data", (chunk) => body.push(chunk));
+      res.on("end", () => {
         try {
           body = JSON.parse(Buffer.concat(body).toString());
         } catch (err) {
@@ -115,7 +115,7 @@ function httpRequest(params, postData) {
         resolve(body);
       });
     });
-    req.on('error', (err) => reject(err));
+    req.on("error", (err) => reject(err));
     if (postData) req.write(postData);
     req.end();
   });
@@ -123,7 +123,7 @@ function httpRequest(params, postData) {
 
 function extendData(card, data) {
   let cardDetail = data.find((cardScry) => {
-    return card.name === (cardScry.name.replace(/\s\/\/\s.+$/i, ''));
+    return card.name === cardScry.name.replace(/\s\/\/\s.+$/i, "");
   });
   card.url = cardDetail.scryfall_uri;
   card.image = cardDetail.image_uris.large;
@@ -132,17 +132,21 @@ function extendData(card, data) {
   let syms = card.cost.match(/\{[^{}]*\}/g);
   if (syms != null) {
     syms.forEach((s) => {
-      let sym = s.replace('{', '').replace('}', '').replace('/', '');
+      let sym = s.replace("{", "").replace("}", "").replace("/", "");
       card.symbols += `<img src="https://svgs.scryfall.io/card-symbols/${sym}.svg" style="width: 1rem; height: 1rem; margin: 0px 1px 0px 1px;" />`;
-    })
-  };
-  card.symbols += '</div>';
-  card.row = render(tpl.row, { 'CCOUNT': card.count, 'CTITLE': card.name, 'CCOST': card.symbols });
+    });
+  }
+  card.symbols += "</div>";
+  card.row = render(tpl.row, {
+    CCOUNT: card.count,
+    CTITLE: card.name,
+    CCOST: card.symbols,
+  });
 
   return card;
 }
 
-hexo.extend.filter.register('after_post_render', (data) => {
+hexo.extend.filter.register("after_post_render", (data) => {
   data.content += tpl.style;
   return data;
 });
@@ -153,159 +157,183 @@ hexo.extend.filter.register('after_post_render', (data) => {
  * // "cardname" can be English or printed name.
  * {% mtgcard "cardname" [edition] [language=string] [tooltip=true|false] %}
  */
-hexo.extend.tag.register('mtgcard', async (args) => {
-  let argv = ((argArray) => {
-    let argument = {};
-    argArray.forEach((entry, index) => {
-      if (index === 0) {
-        // Name.
-        argument['search'] = encodeURIComponent(entry);
-        argument['name'] = entry;
-      } else {
-        if (index === 1 && entry.length === 3) {
-          // Expansion.
-          argument['edition'] = entry;
+hexo.extend.tag.register(
+  "mtgcard",
+  async (args) => {
+    let argv = ((argArray) => {
+      let argument = {};
+      argArray.forEach((entry, index) => {
+        if (index === 0) {
+          // Name.
+          argument["search"] = encodeURIComponent(entry);
+          argument["name"] = entry;
         } else {
-          // Options. Style: `key:value` or `key=value`.
-          if (entry.includes(':')) {
-            let tmp = entry.split(':');
-            argument[tmp[0]] = (tmp[1] === 'true' || tmp[1] === 'false') ? (tmp[1] === 'true') : tmp[1];
-          } else if (entry.includes('=')) {
-            let tmp = entry.split('=');
-            argument[tmp[0]] = (tmp[1] === 'true' || tmp[1] === 'false') ? (tmp[1] === 'true') : tmp[1];
+          if (index === 1 && entry.length === 3) {
+            // Expansion.
+            argument["edition"] = entry;
+          } else {
+            // Options. Style: `key:value` or `key=value`.
+            if (entry.includes(":")) {
+              let tmp = entry.split(":");
+              argument[tmp[0]] =
+                tmp[1] === "true" || tmp[1] === "false"
+                  ? tmp[1] === "true"
+                  : tmp[1];
+            } else if (entry.includes("=")) {
+              let tmp = entry.split("=");
+              argument[tmp[0]] =
+                tmp[1] === "true" || tmp[1] === "false"
+                  ? tmp[1] === "true"
+                  : tmp[1];
+            }
           }
         }
-      }
-    });
-    if (undefined === argument.tooltip) argument.tooltip = false;
-    if (undefined === argument.edition) argument.edition = '';
-    if (undefined === argument.language) argument.language = 'en';
-
-    return argument;
-  })(args);
-
-  let scryfallAPIPath = `/cards/search?q=!%22${argv.search}%22`;
-  if (argv.edition !== '') {
-    scryfallAPIPath += `+set:${argv.edition}`;
-  }
-  if (argv.language !== 'en') {
-    scryfallAPIPath += `+lang:${argv.language}`;
-    scryfallAPIPath += '&include_multilingual=1';
-  }
-  try {
-    const data = await httpRequest({
-      host: 'api.scryfall.com',
-      method: 'GET',
-      headers: {
-        'User-Agent': userAgentString,
-      },
-      path: scryfallAPIPath
-    });
-    await sleep(100);
-    let card = data.data[0];
-    if (undefined === card) {
-      argv.tooltip = false;
-      card['image_uris']['large'] = '#';
-      card['scryfall_uri'] = '#';
-    }
-
-    let html, cardImageUrl;
-    if (card.image_uris !== undefined) {
-      cardImageUrl = card.image_uris.large;
-    } else {
-      cardImageUrl = card.card_faces[0].image_uris.large;
-    }
-    if (argv.tooltip) {
-      html = render(tpl.tooltip, {
-        'URL': card.scryfall_uri,
-        'NAME': argv.name,
-        'IMG': render(tpl.tooltip_image, { 'IMG': cardImageUrl })
       });
-    } else {
-      html = render(tpl.image, { 'IMG': cardImageUrl });
+      if (undefined === argument.tooltip) argument.tooltip = false;
+      if (undefined === argument.edition) argument.edition = "";
+      if (undefined === argument.language) argument.language = "en";
+
+      return argument;
+    })(args);
+
+    let scryfallAPIPath = `/cards/search?q=!%22${argv.search}%22`;
+    if (argv.edition !== "") {
+      scryfallAPIPath += `+set:${argv.edition}`;
     }
-    return html;
-  } catch (err) {
-    return '<p><em>Error getting card data: <br />' +
-      `Arguments: ${args}<br />` +
-      `Query: ${JSON.stringify(argv)}<br />` +
-      `API Path: ${scryfallAPIPath}</em></p>`;
-  }
-}, { async: true });
+    if (argv.language !== "en") {
+      scryfallAPIPath += `+lang:${argv.language}`;
+      scryfallAPIPath += "&include_multilingual=1";
+    }
+    try {
+      const data = await httpRequest({
+        host: "api.scryfall.com",
+        method: "GET",
+        headers: {
+          "User-Agent": userAgentString,
+        },
+        path: scryfallAPIPath,
+      });
+      await sleep(500);
+      let card = data.data[0];
+      if (undefined === card) {
+        argv.tooltip = false;
+        card["image_uris"]["large"] = "#";
+        card["scryfall_uri"] = "#";
+      }
+
+      let html, cardImageUrl;
+      if (card.image_uris !== undefined) {
+        cardImageUrl = card.image_uris.large;
+      } else {
+        cardImageUrl = card.card_faces[0].image_uris.large;
+      }
+      if (argv.tooltip) {
+        html = render(tpl.tooltip, {
+          URL: card.scryfall_uri,
+          NAME: argv.name,
+          IMG: render(tpl.tooltip_image, { IMG: cardImageUrl }),
+        });
+      } else {
+        html = render(tpl.image, { IMG: cardImageUrl });
+      }
+      return html;
+    } catch (err) {
+      return (
+        "<p><em>Error getting card data: <br />" +
+        `Arguments: ${args}<br />` +
+        `Query: ${JSON.stringify(argv)}<br />` +
+        `API Path: ${scryfallAPIPath}</em></p>`
+      );
+    }
+  },
+  { async: true },
+);
 
 /**
  * MtG pick card tag
  * @example
  * {% mtgpick "expansion" "collection number" [language=string] [tooltip=true|false] %}
  */
-hexo.extend.tag.register('mtgpick', async (args) => {
-  let argv = ((argArray) => {
-    let argument = {};
-    argArray.forEach((entry, index) => {
-      if (index === 0) {
-        // Expansion
-        argument['edition'] = entry;
-      } else if (index === 1) {
-        // Collection number.
-        argument['collectionNumber'] = entry;
-      } else {
-        // Options. Style: `key:value` or `key=value`.
-        if (entry.includes(':')) {
-          let tmp = entry.split(':');
-          argument[tmp[0]] = (tmp[1] === 'true' || tmp[1] === 'false') ? (tmp[1] === 'true') : tmp[1];
-        } else if (entry.includes('=')) {
-          let tmp = entry.split('=');
-          argument[tmp[0]] = (tmp[1] === 'true' || tmp[1] === 'false') ? (tmp[1] === 'true') : tmp[1];
+hexo.extend.tag.register(
+  "mtgpick",
+  async (args) => {
+    let argv = ((argArray) => {
+      let argument = {};
+      argArray.forEach((entry, index) => {
+        if (index === 0) {
+          // Expansion
+          argument["edition"] = entry;
+        } else if (index === 1) {
+          // Collection number.
+          argument["collectionNumber"] = entry;
+        } else {
+          // Options. Style: `key:value` or `key=value`.
+          if (entry.includes(":")) {
+            let tmp = entry.split(":");
+            argument[tmp[0]] =
+              tmp[1] === "true" || tmp[1] === "false"
+                ? tmp[1] === "true"
+                : tmp[1];
+          } else if (entry.includes("=")) {
+            let tmp = entry.split("=");
+            argument[tmp[0]] =
+              tmp[1] === "true" || tmp[1] === "false"
+                ? tmp[1] === "true"
+                : tmp[1];
+          }
         }
-      }
-    });
-    if (undefined === argument.tooltip) argument.tooltip = false;
-    if (undefined === argument.language) argument.language = 'en';
-
-    return argument;
-  })(args);
-
-  let scryfallAPIPath = `/cards/${argv.edition}/${argv.collectionNumber}`;
-  if (argv.language !== 'en') {
-    scryfallAPIPath += `/${argv.language}`;
-  }
-
-  try {
-    const data = await httpRequest({
-      host: 'api.scryfall.com',
-      method: 'GET',
-      headers: {
-        'User-Agent': userAgentString,
-      },
-      path: scryfallAPIPath
-    });
-    await sleep(100);
-    let card = data;
-    let html, cardImageUrl;
-    if (card.image_uris !== undefined) {
-      cardImageUrl = card.image_uris.large;
-    } else {
-      cardImageUrl = card.card_faces[0].image_uris.large;
-    }
-    if (argv.tooltip) {
-      html = render(tpl.tooltip, {
-        'URL': card.scryfall_uri,
-        'NAME': card.name,
-        'IMG': render(tpl.tooltip_image, { 'IMG': cardImageUrl })
       });
-    } else {
-      html = render(tpl.image, { 'IMG': cardImageUrl });
+      if (undefined === argument.tooltip) argument.tooltip = false;
+      if (undefined === argument.language) argument.language = "en";
+
+      return argument;
+    })(args);
+
+    let scryfallAPIPath = `/cards/${argv.edition}/${argv.collectionNumber}`;
+    if (argv.language !== "en") {
+      scryfallAPIPath += `/${argv.language}`;
     }
-    return html;
-  } catch (err) {
-    return '<p><em>Error getting card data: <br />' +
-      `Arguments: ${args}<br />` +
-      `Query: ${JSON.stringify(argv)}<br />` +
-      `API Path: ${scryfallAPIPath}</em></p>`;
-  }
-}, {
-  async: true
-});
+
+    try {
+      const data = await httpRequest({
+        host: "api.scryfall.com",
+        method: "GET",
+        headers: {
+          "User-Agent": userAgentString,
+        },
+        path: scryfallAPIPath,
+      });
+      await sleep(500);
+      let card = data;
+      let html, cardImageUrl;
+      if (card.image_uris !== undefined) {
+        cardImageUrl = card.image_uris.large;
+      } else {
+        cardImageUrl = card.card_faces[0].image_uris.large;
+      }
+      if (argv.tooltip) {
+        html = render(tpl.tooltip, {
+          URL: card.scryfall_uri,
+          NAME: card.name,
+          IMG: render(tpl.tooltip_image, { IMG: cardImageUrl }),
+        });
+      } else {
+        html = render(tpl.image, { IMG: cardImageUrl });
+      }
+      return html;
+    } catch (err) {
+      return (
+        "<p><em>Error getting card data: <br />" +
+        `Arguments: ${args}<br />` +
+        `Query: ${JSON.stringify(argv)}<br />` +
+        `API Path: ${scryfallAPIPath}</em></p>`
+      );
+    }
+  },
+  {
+    async: true,
+  },
+);
 
 /**
  * MtG card list
@@ -318,171 +346,183 @@ hexo.extend.tag.register('mtgpick', async (args) => {
  * {% endmtglist %}
  * @todo Fix Double-faced cards' image_url.
  */
-hexo.extend.tag.register('mtglist', async (args, content) => {
-  let argv = ((argArray) => {
-    let argument = {};
-    argArray.forEach((entry, index) => {
-      // Options. Style: `key:value` or `key=value`.
-      if (entry.includes(':')) {
-        let tmp = entry.split(':');
-        argument[tmp[0]] = tmp[1] === 'true';
-      } else if (entry.includes('=')) {
-        let tmp = entry.split('=');
-        argument[tmp[0]] = tmp[1] === 'true';
+hexo.extend.tag.register(
+  "mtglist",
+  async (args, content) => {
+    let argv = ((argArray) => {
+      let argument = {};
+      argArray.forEach((entry, index) => {
+        // Options. Style: `key:value` or `key=value`.
+        if (entry.includes(":")) {
+          let tmp = entry.split(":");
+          argument[tmp[0]] = tmp[1] === "true";
+        } else if (entry.includes("=")) {
+          let tmp = entry.split("=");
+          argument[tmp[0]] = tmp[1] === "true";
+        }
+      });
+      if (undefined === argument.tooltip) argument.tooltip = false;
+      if (undefined === argument.symbols) argument.symbols = false;
+
+      return argument;
+    })(args);
+
+    let data = { identifiers: [] };
+    let cards = { main: [], side: [], count: { main: 0, side: 0 } };
+    content = content.replaceAll("\n", "").split("//sideboard");
+    cards.main = content[0].split(";");
+    if (cards.main[cards.main.length - 1] === "") {
+      cards.main.splice(-1);
+    }
+    if (typeof content[1] !== "undefined") {
+      cards.side = content[1].split(";");
+      if (cards.side[cards.side.length - 1] === "") {
+        cards.side.splice(-1);
       }
-    });
-    if (undefined === argument.tooltip) argument.tooltip = false;
-    if (undefined === argument.symbols) argument.symbols = false;
-
-    return argument;
-  })(args);
-
-  let data = { 'identifiers': [] };
-  let cards = { 'main': [], 'side': [], 'count': { 'main': 0, 'side': 0 } }
-  content = content.replaceAll('\n', '').split('//sideboard');
-  cards.main = content[0].split(';');
-  if (cards.main[cards.main.length - 1] === '') {
-    cards.main.splice(-1);
-  };
-  if (typeof content[1] !== 'undefined') {
-    cards.side = content[1].split(';');
-    if (cards.side[cards.side.length - 1] === '') {
-      cards.side.splice(-1);
-    };
-  };
-
-  cards.main.forEach((entry, idx) => {
-    cards.main[idx] = entry.split('#');
-    cards.main[idx] = {
-      'count': parseInt(cards.main[idx][0]),
-      'name': cards.main[idx][1],
-      'edition': cards.main[idx][2]
-    };
-    cards.count.main += cards.main[idx].count;
-    data.identifiers.push({
-      'name': cards.main[idx].name.replaceAll(' ', '-'),
-      'set': cards.main[idx].edition
-    });
-  });
-  cards.side.forEach((entry, idx) => {
-    cards.side[idx] = entry.split('#');
-    cards.side[idx] = {
-      'count': parseInt(cards.side[idx][0]),
-      'name': cards.side[idx][1],
-      'edition': cards.side[idx][2]
-    };
-    cards.count.side += cards.side[idx].count;
-    data.identifiers.push({
-      'name': cards.side[idx].name,
-      'set': cards.side[idx].edition
-    });
-  });
-
-  data = JSON.stringify(data);
-  try {
-    const bulk_data = await httpRequest({
-      host: 'api.scryfall.com',
-      method: 'POST',
-      path: '/cards/collection',
-      headers: {
-        'User-Agent': userAgentString,
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(data)
-      }
-    }, data);
-
-    let main = render(tpl.mainblock, { 'TITLE': `套牌 (${cards.count.main})` });
-    let side = '';
-    if (cards.count.side > 0) {
-      side = render(tpl.sideblock, { 'TITLE': `備牌 (${cards.count.side})` });
     }
 
-    cards.main.forEach((card) => {
-      card = extendData(card, bulk_data.data);
-
-      if (argv.tooltip) {
-        if (argv.symbols) {
-          main = render(main, {
-            'CARDS': render(tpl.tooltip, {
-              'URL': card.url,
-              'NAME': card.row,
-              'IMG': render(tpl.tooltip_image, { 'IMG': card.image })
-            }) + '##CARDS##'
-          });
-        } else {
-          main = render(main, {
-            'CARDS': render(tpl.tooltip, {
-              'URL': card.url,
-              'NAME': render(tpl.noSymRow, {
-                'CCOUNT': card.count,
-                'CTITLE': card.name
-              }),
-              'IMG': render(tpl.tooltip_image, { 'IMG': card.image })
-            }) + '##CARDS##'
-          });
-        };
-      } else {
-        if (argv.symbols) {
-          main = render(main, { 'CARDS': `${card.row}##CARDS##` });
-        } else {
-          main = render(main, {
-            'CARDS': render(tpl.noSymRow, {
-              'CCOUNT': card.count,
-              'CTITLE': card.name
-            }) + '##CARDS##'
-          });
-        }
+    cards.main.forEach((entry, idx) => {
+      cards.main[idx] = entry.split("#");
+      cards.main[idx] = {
+        count: parseInt(cards.main[idx][0]),
+        name: cards.main[idx][1],
+        edition: cards.main[idx][2],
       };
+      cards.count.main += cards.main[idx].count;
+      data.identifiers.push({
+        name: cards.main[idx].name.replaceAll(" ", "-"),
+        set: cards.main[idx].edition,
+      });
+    });
+    cards.side.forEach((entry, idx) => {
+      cards.side[idx] = entry.split("#");
+      cards.side[idx] = {
+        count: parseInt(cards.side[idx][0]),
+        name: cards.side[idx][1],
+        edition: cards.side[idx][2],
+      };
+      cards.count.side += cards.side[idx].count;
+      data.identifiers.push({
+        name: cards.side[idx].name,
+        set: cards.side[idx].edition,
+      });
     });
 
-    cards.side.forEach((sidecard) => {
-      sidecard = extendData(sidecard, bulk_data.data);
+    data = JSON.stringify(data);
+    try {
+      const bulk_data = await httpRequest(
+        {
+          host: "api.scryfall.com",
+          method: "POST",
+          path: "/cards/collection",
+          headers: {
+            "User-Agent": userAgentString,
+            "Content-Type": "application/json",
+            "Content-Length": Buffer.byteLength(data),
+          },
+        },
+        data,
+      );
 
-      if (argv.tooltip) {
-        if (argv.symbols) {
-          side = render(side, {
-            'CARDS': render(tpl.tooltip, {
-              'URL': sidecard.url,
-              'NAME': sidecard.row,
-              'IMG': render(tpl.tooltip_image, { 'IMG': sidecard.image })
-            }) + '##CARDS##'
-          });
+      let main = render(tpl.mainblock, { TITLE: `套牌 (${cards.count.main})` });
+      let side = "";
+      if (cards.count.side > 0) {
+        side = render(tpl.sideblock, { TITLE: `備牌 (${cards.count.side})` });
+      }
+
+      cards.main.forEach((card) => {
+        card = extendData(card, bulk_data.data);
+
+        if (argv.tooltip) {
+          if (argv.symbols) {
+            main = render(main, {
+              CARDS:
+                render(tpl.tooltip, {
+                  URL: card.url,
+                  NAME: card.row,
+                  IMG: render(tpl.tooltip_image, { IMG: card.image }),
+                }) + "##CARDS##",
+            });
+          } else {
+            main = render(main, {
+              CARDS:
+                render(tpl.tooltip, {
+                  URL: card.url,
+                  NAME: render(tpl.noSymRow, {
+                    CCOUNT: card.count,
+                    CTITLE: card.name,
+                  }),
+                  IMG: render(tpl.tooltip_image, { IMG: card.image }),
+                }) + "##CARDS##",
+            });
+          }
         } else {
-          side = render(side, {
-            'CARDS': render(tpl.tooltip, {
-              'URL': sidecard.url,
-              'NAME': render(tpl.noSymRow, {
-                'CCOUNT': sidecard.count,
-                'CTITLE': sidecard.name
-              }),
-              'IMG': render(tpl.tooltip_image, { 'IMG': sidecard.image })
-            }) + '##CARDS##'
-          });
-        };
-      } else {
-        if (argv.symbols) {
-          side = render(side, { 'CARDS': `${sidecard.row}##CARDS##` });
-        } else {
-          side = render(side, {
-            'CARDS': render(tpl.noSymRow, {
-              'CCOUNT': sidecard.count,
-              'CTITLE': sidecard.name
-            }) + '##CARDS##'
-          });
+          if (argv.symbols) {
+            main = render(main, { CARDS: `${card.row}##CARDS##` });
+          } else {
+            main = render(main, {
+              CARDS:
+                render(tpl.noSymRow, {
+                  CCOUNT: card.count,
+                  CTITLE: card.name,
+                }) + "##CARDS##",
+            });
+          }
         }
-      };
+      });
 
-    });
+      cards.side.forEach((sidecard) => {
+        sidecard = extendData(sidecard, bulk_data.data);
 
-    main = render(main, { 'CARDS': '' });
-    if (cards.count.side > 0) {
-      side = render(side, { 'CARDS': '' });
+        if (argv.tooltip) {
+          if (argv.symbols) {
+            side = render(side, {
+              CARDS:
+                render(tpl.tooltip, {
+                  URL: sidecard.url,
+                  NAME: sidecard.row,
+                  IMG: render(tpl.tooltip_image, { IMG: sidecard.image }),
+                }) + "##CARDS##",
+            });
+          } else {
+            side = render(side, {
+              CARDS:
+                render(tpl.tooltip, {
+                  URL: sidecard.url,
+                  NAME: render(tpl.noSymRow, {
+                    CCOUNT: sidecard.count,
+                    CTITLE: sidecard.name,
+                  }),
+                  IMG: render(tpl.tooltip_image, { IMG: sidecard.image }),
+                }) + "##CARDS##",
+            });
+          }
+        } else {
+          if (argv.symbols) {
+            side = render(side, { CARDS: `${sidecard.row}##CARDS##` });
+          } else {
+            side = render(side, {
+              CARDS:
+                render(tpl.noSymRow, {
+                  CCOUNT: sidecard.count,
+                  CTITLE: sidecard.name,
+                }) + "##CARDS##",
+            });
+          }
+        }
+      });
+
+      main = render(main, { CARDS: "" });
+      if (cards.count.side > 0) {
+        side = render(side, { CARDS: "" });
+      }
+      return render(tpl.list, { CBLOCK: main, SBLOCK: side });
+    } catch (err) {
+      return `<p>Failed to rendered card list: <br />${content}</p>`;
     }
-    return render(tpl.list, { 'CBLOCK': main, 'SBLOCK': side });
-  } catch (err) {
-    return `<p>Failed to rendered card list: <br />${content}</p>`;
-  }
-}, {
-  ends: true,
-  async: true
-});
+  },
+  {
+    ends: true,
+    async: true,
+  },
+);
