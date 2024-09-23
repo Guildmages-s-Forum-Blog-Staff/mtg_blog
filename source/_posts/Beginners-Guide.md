@@ -1,7 +1,7 @@
 ---
 
 title: "MTG新手入坑指南"
-date: "2024-09-23 13:07:25"
+date: "2024-09-10 14:00:00"
 tags:
   - "JruMTG"
 authors:
@@ -9,8 +9,8 @@ authors:
 categories:
   - "Others"
   - "Beginner"
-cover: "https://www.artofmtg.com/wp-content/uploads/2018/04/Urzas-Tome-Dominaria-MtG-Art.jpg"
-thumbnail: "https://www.artofmtg.com/wp-content/uploads/2018/04/Urzas-Tome-Dominaria-MtG-Art.jpg"
+cover: "https://guildmagesforum.tw/images/Beginners-Guide/Urzas-Tome.jpg"
+thumbnail: "https://guildmagesforum.tw/images/Beginners-Guide/Urzas-Tome.jpg"
 excerpt: "從零開始的新手入坑指引"
 ---
 
@@ -18,7 +18,7 @@ excerpt: "從零開始的新手入坑指引"
 
 本文是面向剛入坑的零經驗新手，幫助新手理解MTG的基本規則、以及提供查詢資料時所需的資源。歡迎大家分享這篇文章、陪伴新手參與遊戲，希望這篇文章能因此成為新人的萬用百科。
 
-![封面](https://www.artofmtg.com/wp-content/uploads/2019/01/Tome-of-the-Guildpact-Ravnica-Allegiance-Art.jpg)
+![](/images/Beginners-Guide/Urzas-Tome.jpg)
 
 ---
 
@@ -339,7 +339,7 @@ MTG的牌張共有五種顏色，分別為[白](https://magic.wizards.com/en/new
 - **戰鬥階段（Combat Phase）**
 戰鬥階段中共有五個步驟，每個步驟都會優先執行該步驟內指定的動作，之後玩家可以施放瞬間與起動異能。
     - **戰鬥開始步驟（Beginning of Combat Step）**
-    此步驟無指定的特殊動作，「在你回合的戰鬥開始時」觸發的異能會於此時觸發。
+    此步驟無指定的回合動作，「在你回合的戰鬥開始時」觸發的異能會於此時觸發。
     - **宣告攻擊者步驟（Declare Attackers Step）**
     只有未橫置的生物才能宣告攻擊，選擇任意數量你想宣告攻擊的生物，並宣告這些生物各自攻擊哪位玩家或鵬洛客，這些生物會一同進行攻擊，生物宣告攻擊後會被橫置。
     - **宣告阻擋者步驟（Declare Blockers Step）**
@@ -477,7 +477,8 @@ MTG的牌張共有五種顏色，分別為[白](https://magic.wizards.com/en/new
 ---
 
 ## 賽制介紹
-![賽制](https://www.artofmtg.com/wp-content/uploads/2021/03/Strixhaven-Stadium-Strixhaven-MtG-Art.jpg)
+
+![](/images/Beginners-Guide/Strixhaven-Stadium-Strixhaven.jpg)
 
  MTG 的賽制可以分為構築賽 ＆ 限制賽兩大類。構築賽使用的是玩家自行構築的套牌，並且依照可用牌池的大小與其他構築規則，又再分為數種賽制。限制賽玩家無須準備自己的套牌，遊戲方式為玩家現場打開補充包，並使用這些補充包組出一副套牌對戰，限制賽依照規則可再分為現開＆輪抽兩種。
 
@@ -562,7 +563,7 @@ MTG的牌張共有五種顏色，分別為[白](https://magic.wizards.com/en/new
 ---
 
 ## 資源連結
-![網站](https://www.artofmtg.com/wp-content/uploads/2021/02/Frantic-Search-Ultimate-Masters-MtG-Art.jpg)
+![](/images/Beginners-Guide/Frantic-Search.jpg)
 
 本章節會介紹幾個常用的 MTG 相關資源網站，以下各網站標題同時為網站超連結。
 
