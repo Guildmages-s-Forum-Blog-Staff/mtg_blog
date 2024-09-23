@@ -18,7 +18,7 @@ excerpt: "從零開始的新手入坑指引"
 
 本文是面向剛入坑的零經驗新手，幫助新手理解MTG的基本規則、以及提供查詢資料時所需的資源。歡迎大家分享這篇文章、陪伴新手參與遊戲，希望這篇文章能因此成為新人的萬用百科。
 
-![](/images/Beginners-Guide/Urzas-Tome.jpg)
+![](/images/Beginners-Guide/Tome-of-the-Guildpact-Ravnica-Allegiance.jpg)
 
 ---
 
