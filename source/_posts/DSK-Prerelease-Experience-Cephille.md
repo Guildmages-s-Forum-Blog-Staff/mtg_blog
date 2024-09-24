@@ -1,6 +1,6 @@
 ---
 title: "豬鼻子的 DSK 售前現開分享"
-date: "2024-09-24 23:00:00"
+date: "2024-09-24 23:07:19"
 tags:
   - "cephille"
 cover: "https://i.postimg.cc/3rCxTkPX/duskmournart-1160x653.jpg"
@@ -33,7 +33,7 @@ categories:
 這是個打了個三勝的 pool ，但我覺得這其中有點運氣成分，不然應該是個兩勝左右的構築，會需要稍加微調來放大強度。
 
 #### 主牌介紹與討論
-雖然只有一張 [Terramorphic Expanse](https://scryfall.com/card/dsk/269/terramorphic-expanse) ，但因為綠色有兩張超強調色 [Twitching Doll](https://scryfall.com/card/dsk/201/twitching-doll) 、以及 [Overgrown Zealot](https://scryfall.com/card/dsk/193/overgrown-zealot) ，所以還是進了三色勇德（黑、紅、綠）的構築，靠著紅黑的去除，跟綠色地優秀體格生物，前期還有機會靠著二費 3 攻生物快速刷爆對手，這在面對重後期的藍黑控制，早早登場的高攻生物價值是非常高的，也會逼迫對手在不舒服的節奏下做去除，那我們後面的威脅就更容易登場了。這點在第二盤跟打藍黑的對手中大大的凸顯出來！還是要說句，[Wary Watchdog](https://scryfall.com/card/dsk/206/wary-watchdog) 如中二紳士在 [DSK- 綠色](https://www.facebook.com/share/p/tnfLpeCs6KAVgQ2u/) 這篇說的，真是好狗狗！
+雖然只有一張 [Terramorphic Expanse](https://scryfall.com/card/dsk/269/terramorphic-expanse) ，但因為綠色有兩張超強調色 [Twitching Doll](https://scryfall.com/card/dsk/201/twitching-doll) 、以及 [Overgrown Zealot](https://scryfall.com/card/dsk/193/overgrown-zealot) ，所以還是進了三色勇德（黑、紅、綠）的構築，靠著紅黑的去除，跟綠色優秀的生物體格，前期還有機會靠著二費 3 攻生物快速刷爆對手，這在面對重後期的藍黑控制，早早登場的高攻生物價值是非常高的，也會逼迫對手在不舒服的節奏下做去除，那我們後面的威脅就更容易登場了。這點在第二盤跟打藍黑的對手中大大的凸顯出來！還是要說句，[Wary Watchdog](https://scryfall.com/card/dsk/206/wary-watchdog) 如[中二紳士](https://guildmagesforum.tw/tags/%E4%B8%AD%E4%BA%8C%E7%B4%B3%E5%A3%AB/)在 [DSK — 綠色](https://guildmagesforum.tw/DSK-Green/) 這篇說的，真是好狗狗！
 
 值得一提的是， [Hauntwoods Shrieker](https://scryfall.com/card/dsk/182/hauntwoods-shrieker) 這張秘稀牌在這樣偏中速的構築是不太適合的，如果它三費登場，攻擊後顯化懼象（manifest dread）後就被換掉，這其實是虧體格的；在更純的紅綠快攻中表現可能會更好，搭配更多的 trick 跟去除讓他持續賺價值。 
  
@@ -91,7 +91,7 @@ categories:
 #### 主牌介紹與討論
 
 三張藍黑 R/MR 強牌強度不說，但我對局中其實沒有用好 [Kaito, Bane of Nightmares](https://scryfall.com/card/dsk/220/kaito-bane-of-nightmares)，還被卡士多的[銀毛師父](https://scryfall.com/card/neo/236/zht/%E9%8A%80%E6%AF%9B%E5%B8%AB%E7%88%B6) aka [跳鼠](https://guildmagesforum.tw/tags/jerobamtg/) 提醒，這幾點跟大家分享一下：
-> 1. 他場面有生物時， [Kaito, Bane of Nightmares](https://scryfall.com/card/dsk/220/kaito-bane-of-nightmares) 忍術進場打完開 [-2] 暈掉他可進攻的生物來保住魁渡；
+> 1. 對手場面有生物時， [Kaito, Bane of Nightmares](https://scryfall.com/card/dsk/220/kaito-bane-of-nightmares) 忍術進場打完開 [-2] 暈掉他可進攻的生物來保住魁渡；
 > 2. 而必要的時候，四費正拍魁渡再 [-2] 暈一隻進攻就好，不用只想著要三費做忍術出。
 
 不過混白也有一些收穫，比如說 [Seized from Slumber](https://scryfall.com/card/dsk/28/seized-from-slumber) 這種牌對需要防守的藍黑色組是非常高效的；但像 [Trapped in the Screen](https://scryfall.com/card/dsk/36/trapped-in-the-screen) 這樣比較不穩定又虧節奏的解牌，就不應該混了，藍黑或其他偏慢速的色組，還是應該紮紮實實地解掉對手的威脅。 
@@ -159,7 +159,7 @@ categories:
 3. 順利渡過前四 ～ 五回合後，就可以開始靠繫命生物，讓對手殘存的小生物的攻擊無效化，繼續保留一些康殺給可能有的高費威脅。
    - 四費後我們就可以拍出我們的高防阻擋者了，不過要注意的是，因為我們前面沒什麼生物，對手的去除基本上都還留著。有先用 [Cracked Skull](https://scryfall.com/card/dsk/88/cracked-skull) 看過、或先出 [Fear of Infinity](https://scryfall.com/card/dsk/214/fear-of-infinity) 來騙殺的價值更高，反正它會爬回來。
    - 四費有兩隻 2/5 的阻擋/高效的攻擊者。 [Dashing Bloodsucker](https://scryfall.com/card/dsk/90/dashing-bloodsucker) 價值非常高，異景如果能反覆觸發的攻擊力還會變更高，狠狠奶一口後，基本上對手會接近白打。
-   - 而另一隻 [Clammy Prowler](https://scryfall.com/card/dsk/45/clammy-prowler) 則在場面撐住後，帶動你的繫命生物，或 [Appendage Amalgam](https://scryfall.com/card/dsk/83/appendage-amalgam) 不能被阻擋的價值很高。
+   - 而另一隻 [Clammy Prowler](https://scryfall.com/card/dsk/45/clammy-prowler) 則在場面撐住後，帶動你的繫命生物，或 [Appendage Amalgam](https://scryfall.com/card/dsk/83/appendage-amalgam) 不能被阻擋。
    - 五費或七費時的 [Sporogenic Infection](https://scryfall.com/card/dsk/117/sporogenic-infection) 與 [Unnerving Grasp](https://scryfall.com/card/dsk/80/unnerving-grasp) 也是一個很過分的一加一。 
 4. 穩穩撐到六七塊地後就很舒服了，隨時準備九費正拍大惡魔讓對手絕望XD 即使沒有惡魔，對手耗光資源時出沼澤循環 [Spectral Snatcher](https://scryfall.com/card/dsk/116/spectral-snatcher)，也是存活率相當高的 clock。
 
