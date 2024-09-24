@@ -1,7 +1,7 @@
 ---
 
 title: "珠光蓮花再就業：薪傳加倍方體"
-date: "2024-09-24 22:43:31"
+date: "2024-09-24 23:06:47"
 tags:
   - "JruMTG"
 authors:
@@ -87,9 +87,9 @@ excerpt: "珠光蓮花最後的波紋"
 
 ![終結者](https://i.meee.com.tw/WlqqqWh.png)
 
-終結者共有以下三種，分別適合在不同情境下取勝，備牌各有一張作為[萬創卡恩](https://scryfall.com/card/rvr/1/karn-the-great-creator)工具箱的選項，此外[自行弩炮](https://scryfall.com/card/cmm/964/mystic-forge)在正編也有一張，即使[萬創卡恩](https://scryfall.com/card/rvr/1/karn-the-great-creator)遭遇不測也還有致勝機會。
+終結者共有以下三種，分別適合在不同情境下取勝，備牌各有一張作為[萬創卡恩](https://scryfall.com/card/rvr/1/karn-the-great-creator)工具箱的選項，此外[自行弩炮](https://scryfall.com/card/2xm/306/walking-ballista)在正編也有一張，即使[萬創卡恩](https://scryfall.com/card/rvr/1/karn-the-great-creator)遭遇不測也還有致勝機會。
 
-1. [自行弩炮](https://scryfall.com/card/cmm/964/mystic-forge)：樸實無華地把 mana 轉為傷害射出去，如果是在已經累積足量 mana 的情況下，可以立即把 mana 轉為致勝點。
+1. [自行弩炮](https://scryfall.com/card/2xm/306/walking-ballista)：樸實無華地把 mana 轉為傷害射出去，如果是在已經累積足量 mana 的情況下，可以立即把 mana 轉為致勝點。
 2. [乙太流貯庫](https://scryfall.com/card/kld/192/aetherflux-reservoir)：俗稱水塔，非常風暴式的贏法，當前 mana 還不夠多但對後續演牌能力有信心時可以使用，也可以做為[黑魔判](https://scryfall.com/card/dmu/107/sheoldred-the-apocalypse)、[弓手](https://scryfall.com/card/ltr/103/orcish-bowmasters)這類抽牌懲罰牌的對策，硬是靠水塔的回血頂著它們的抽牌扣血能力繼續[亙古回聲](https://scryfall.com/card/mh1/46/echo-of-eons)抽七張。
 3. [構生菌格柵](https://scryfall.com/card/bbd/241/mycosynth-lattice)：近代被 Ban 掉的強力組合，也是卡恩最常見的致勝死鎖，能把對手包含地在內所有永久物的起動式異能封住，只要對手當下沒解，那遊戲基本上就結束了。
 
@@ -111,7 +111,7 @@ excerpt: "珠光蓮花最後的波紋"
 
 
 - [連鎖蒸發](https://scryfall.com/card/c16/84/chain-of-vapor)：最高效的回手系解牌，對於這種說書套牌而言，讓卡住自己運作的元件暫時消失就好，只要對手沒有下回合，那東西是在對手手上、或者墳場裡，其實都沒差。也可以視情況救自己場上的元件。
-- [自行弩炮](https://scryfall.com/card/cmm/964/mystic-forge)、[乙太流貯庫](https://scryfall.com/card/kld/192/aetherflux-reservoir)、[構生菌格柵](https://scryfall.com/card/bbd/241/mycosynth-lattice)：上面所述終結者選項。
+- [自行弩炮](https://scryfall.com/card/2xm/306/walking-ballista)、[乙太流貯庫](https://scryfall.com/card/kld/192/aetherflux-reservoir)、[構生菌格柵](https://scryfall.com/card/bbd/241/mycosynth-lattice)：上面所述終結者選項。
 - [加倍方體](https://scryfall.com/card/10e/321/doubling-cube)、[多相鑰匙](https://scryfall.com/card/m20/230/manifold-key)：備牌放一張給卡恩找，增加主遊戲計畫運作的穩定性。
 - [托瑪墓穴](https://scryfall.com/card/dmr/235/tormods-crypt)：墳場套牌對策。
 - [液金包覆](https://scryfall.com/card/cm2/197/liquimetal-coating)：配上卡恩的 [+1] 可以每回合炸對手一塊地，或是配上卡恩的靜止式異能，強行鎖住某些永久物的起動式異能一回合。炸地部分雖然不如構生菌格柵高效，但也能給對手很大的壓力了。
