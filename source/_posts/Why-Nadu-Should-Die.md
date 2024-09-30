@@ -88,7 +88,7 @@ Nadu 應該可以說是現在環境中最讓人厭惡的套牌，沒有之一。
 
 更別說環境中還有另一張牌 {% mtgcard "Lightning Greaves" tooltip=true %}，同樣也是零費啟動的指定源，缺點是不能指在原本配戴的生物上。
 
-所以如果 ban 掉 {% mtgcard "Shuko" tooltip=true %}，確實 Nadu Combo 真的變弱了，但還有另一個問題：_Nadu Combo 還是一套很花時間的組合技套牌_。
+所以如果 ban 掉 {% mtgcard "Shuko" tooltip=true %}，確實 Nadu Combo 真的變弱了，但還有另一個問題：**Nadu Combo 還是一套很花時間的組合技套牌**。
 
 讓我們往回看 [October 10, 2022, Banned and Restricted Announcement](https://magic.wizards.com/en/news/announcements/october-10-2022-banned-and-restricted-announcement) 來複習一下為什麼 {% mtgcard "Yorion, Sky Nomad" tooltip=true %} 在近代被 ban 了。
 
