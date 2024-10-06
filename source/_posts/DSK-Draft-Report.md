@@ -1,7 +1,7 @@
 ---
 
 title: "暮悲邸：鬼屋驚魂（DSK）輪抽分享"
-date: "2024-10-04 18:53:41"
+date: "2024-10-06 17:16:19"
 tags:
   - "cephille"
   - "jeffchen"
@@ -75,7 +75,7 @@ categories:
 | **<font color="#FD0214">紅</font><font color="#0A883B">綠</font>** | 5 | 21 | 12 | 63.6% | 57.3% | 
 | **<font color="#FED761">白</font><font color="#0A883B">綠</font>** | 3 | 18 | 8 | 69.2% | 53.6% | 
 | **<font color="#023FFD">藍</font><font color="#0A883B">綠</font>** | 3 | 8 | 9 | 47.1% | 57.0% | 
-| **<font color="#FD0214">紅</font>黑** | 2 | 11 | 9 | 68.9% | 55.8% | 
+| **<font color="#FD0214">紅</font>黑** | 2 | 11 | 6 | 64.7% | 55.8% | 
 | **黑<font color="#0A883B">綠</font>** | 2 | 13 | 5 | 72.2% | 55.4% | 
 | **<font color="#023FFD">藍</font><font color="#FED761">白</font>** | 1 | 4 | 3 | 57.1% | 58.2% | 
 | **黑<font color="#FED761">白</font>** | 1 | 2 | 3 | 40.0% | 52.2% | 
@@ -277,7 +277,7 @@ categories:
 
 > 下面這段是 [Jeffchen](https://guildmagesforum.tw/tags/jeffchen/) 的經驗分享。
 
-這系列紅藍名為開房間主題，但實際使用起來更像是紅藍節奏。利用紅色去除抵擋住前期攻勢，並趁機開房間賺取資源，最後以飛兵獲勝。玩這個色組首先會需要選到好的紅燒 [Scorching Dragonfire](https://scryfall.com/card/dsk/156/scorching-dragonfire) ，生物方面希望前期有 [Creeping Peeper](https://scryfall.com/card/dsk/46/creeping-peeper) 或 [Stalked Researcher](https://scryfall.com/card/dsk/73/stalked-researcher) 來過渡； [Rampaging Soulrager](https://scryfall.com/card/dsk/151/rampaging-soulrager) 是攻防一體的好牌，但是三費才能出還要配合開兩間房才會變成 4/4，會有發動太慢的問題。 U 卡房間推薦 [Bottomless Pool//Locker Room](https://scryfall.com/card/dsk/43/bottomless-pool-locker-room) ，C卡房間則推薦 [Underwater Tunnel//Slimy Aquarium](https://scryfall.com/card/dsk/79/underwater-tunnel-slimy-aquarium) 。 [Ghostly Keybearer](https://scryfall.com/card/dsk/61/ghostly-keybearer) 、和 [Meat Locker//Drowned Diner](https://scryfall.com/card/dsk/65/meat-locker-drowned-diner) ，這兩張牌是看到可以安心打紅藍的信號；如果有看到 R 卡 [Roaring Furnace//Steaming Sauna](https://scryfall.com/card/dsk/230/roaring-furnace-steaming-sauna) 那可就太棒了！
+這系列紅藍名為開房間主題，但實際使用起來更像是紅藍節奏。利用紅色去除抵擋住前期攻勢，並趁機開房間賺取資源，最後以飛兵獲勝。玩這個色組首先會需要選到好的紅燒 [Scorching Dragonfire](https://scryfall.com/card/dsk/156/scorching-dragonfire) ，生物方面希望前期有 [Creeping Peeper](https://scryfall.com/card/dsk/46/creeping-peeper) 或 [Stalked Researcher](https://scryfall.com/card/dsk/73/stalked-researcher) 來過渡； [Rampaging Soulrager](https://scryfall.com/card/dsk/151/rampaging-soulrager) 是攻防一體的好牌，但是三費才能出還要配合開兩間房才會變成 4/4，會有發動太慢的問題。 U 卡房間推薦 [Bottomless Pool//Locker Room](https://scryfall.com/card/dsk/43/bottomless-pool-locker-room) ，C卡房間則推薦 [Underwater Tunnel//Slimy Aquarium](https://scryfall.com/card/dsk/79/underwater-tunnel-slimy-aquarium)和 [Meat Locker//Drowned Diner](https://scryfall.com/card/dsk/65/meat-locker-drowned-diner)  。 [Ghostly Keybearer](https://scryfall.com/card/dsk/61/ghostly-keybearer) ，這張牌是看到可以安心打紅藍的信號；如果有看到 R 卡 [Roaring Furnace//Steaming Sauna](https://scryfall.com/card/dsk/230/roaring-furnace-steaming-sauna) 那可就太棒了！
 
 這次的雙色 U 卡 [Intruding Soulrager](https://scryfall.com/card/dsk/218/intruding-soulrager) 非常沒用，大多數情形會被逼迫和對手的二費生物進行交換；而另一張 [Smoky Lounge//Misty Salon](https://scryfall.com/card/dsk/235/smoky-lounge-misty-salon) 只算是堪用的飛兵，但能要先穩住場面的情形後才有機會使用。 
 
@@ -293,12 +293,12 @@ categories:
 | :-: | :-: | :-: | :-: |
 | **<font color="#FD0214">紅</font><font color="#FED761">白</font>** 1 | {% mtgcard "Acrobatic Cheerleader" tooltip=true %} | {% mtgcard "Most Valuable Slayer" tooltip=true %} | {% mtgcard "Jump Scare" tooltip=true %} | 
 | **<font color="#FD0214">紅</font><font color="#FED761">白</font>** 2 | {% mtgcard "Ragged Playmate" tooltip=true %} | {% mtgcard "Vicious Clown" tooltip=true %} | {% mtgcard "Scorching Dragonfire" tooltip=true %} | 
-| **<font color="#FD0214">紅</font><font color="#0A883B">綠</font>** 1 | {% mtgcard "Wary Watchdog" tooltip=true %} | {% mtgcard "Most Valuable Slayer" tooltip=true %} | {% mtgcard "Horrid Vigor" tooltip=true %}  | 
+| **<font color="#FD0214">紅</font><font color="#0A883B">綠</font>** 1 | {% mtgcard "Wary Watchdog" tooltip=true %} | {% mtgcard "Wildfire Wickerfolk" tooltip=true %} | {% mtgcard "Horrid Vigor" tooltip=true %}  | 
 | **<font color="#FD0214">紅</font><font color="#0A883B">綠</font>** 2 | {% mtgcard "Manifest Dread" tooltip=true %} | {% mtgcard "Fear of Being Hunted" tooltip=true %} | {% mtgcard "Monstrous Emergence" tooltip=true %} | 
 | **<font color="#FED761">白</font><font color="#0A883B">綠</font>** 1 | {% mtgcard "Flesh Burrower" tooltip=true %} | {% mtgcard "Friendly Ghost" tooltip=true %} | {% mtgcard "Horrid Vigor" tooltip=true %}  | 
 | **<font color="#FED761">白</font><font color="#0A883B">綠</font>** 2 | {% mtgcard "Acrobatic Cheerleader" tooltip=true %} | {% mtgcard "Baseball Bat" tooltip=true %} | {% mtgcard "Jump Scare" tooltip=true %} | 
 | **<font color="#023FFD">藍</font><font color="#0A883B">綠</font>** 1 | {% mtgcard "Manifest Dread" tooltip=true %}  | {% mtgcard "Growing Dread" tooltip=true %} | {% mtgcard "Horrid Vigor" tooltip=true %}  |
-| **<font color="#023FFD">藍</font><font color="#0A883B">綠</font>** 2 | {% "Piranha Fly" tooltip=true %} | {% "Cryptid Inspector" tooltip=true %} | {% "Unable to Scream" tooltip=true %} |
+| **<font color="#023FFD">藍</font><font color="#0A883B">綠</font>** 2 | {% mtgcard "Piranha Fly" tooltip=true %} | {% mtgcard "Cryptid Inspector" tooltip=true %} | {% mtgcard "Unable to Scream" tooltip=true %} |
 | **<font color="#FD0214">紅</font>黑** 1 | {% mtgcard "Fear of Lost Teeth" tooltip=true %} | {% mtgcard "Sawblade Skinripper" tooltip=true %} | {% mtgcard "Final Vengeance" tooltip=true %} |
 | **<font color="#FD0214">紅</font>黑** 2 | {% mtgcard "Innocuous Rat" tooltip=true %} | {% mtgcard "Most Valuable Slayer" tooltip=true %} | {% mtgcard "Derelict Attic//Widow's Walk" tooltip=true %} |
 | **黑<font color="#0A883B">綠</font>** 1 | {% mtgcard "Wary Watchdog" tooltip=true %}  | {% mtgcard "Patchwork Beastie" tooltip=true %} | {% mtgcard "Horrid Vigor" tooltip=true %}  |
