@@ -1,7 +1,7 @@
 ---
 
 title: "暮悲邸：鬼屋驚魂（DSK）輪抽分享"
-date: "2024-10-06 17:16:19"
+date: "2024-10-06 18:10:05"
 tags:
   - "cephille"
   - "jeffchen"
@@ -85,7 +85,7 @@ categories:
 
 基本上總共打了 23 場 MTGA 上的 DSK Premier Draft ，總勝場 105 場、平均勝率 62.1% ；從銀牌（Sliver）打上秘稀（Mythic），耗時 7 天（2024/9/24 ~ 2024/9/30）。
 
-{% folding red :: **各色組回顧與輪抽心得（內容很長，讀者有空再點開來看就好）** %}
+{% folding red :: 各色組回顧與輪抽心得（內容很長，讀者有空再點開來看就好） %}
 
 > 註：由於沒有 17lands 的數據，以下各色組的對局我僅提供照片或螢幕截圖，作為概念上敘述的參考。圖片解析度有限，還請讀者多多包涵。
 
@@ -316,7 +316,7 @@ categories:
 
 ### 特別誌謝：[Friendly Teddy](https://scryfall.com/card/dsk/247/friendly-teddy)
 
-{% mtgpick "Friendly Teddy" %}
+{% mtgcard "Friendly Teddy" %}
 
 如果有眼尖的讀者會看到，我至少有 10 個以上的 pool 主牌都放入了泰迪熊 [Friendly Teddy](https://scryfall.com/card/dsk/247/friendly-teddy) 。我原本對這張牌的評價是偏低的，放了也不會覺得很開心；但有一天 [Jeffchen](https://guildmagesforum.tw/tags/jeffchen/) 跟我說：「欸！泰迪熊很強耶！」我半信半疑地在紅綠中嘗試了一次，就此成為泰迪熊教的信徒。如果我某一包有中上等級的去除（[Murder](https://scryfall.com/card/dsk/110/murder) 、 [Trapped in the Screen](https://scryfall.com/card/dsk/36/trapped-in-the-screen) 等）、但沒有色組適合的曲線生物時，那這一包裡如果有泰迪熊我一定會拿下來，並高概率會放進我的正編。
 
