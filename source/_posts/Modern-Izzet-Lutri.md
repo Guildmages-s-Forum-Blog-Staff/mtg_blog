@@ -1,6 +1,7 @@
 ---
+
 title: "近代中的指揮官榮耀：伊捷水獺行侶"
-date: "2024-10-08 10:52:16"
+date: "2024-10-08 14:01:01"
 tags:
   - "ZHAN"
 authors:
@@ -18,10 +19,11 @@ excerpt: "九月三十號星期一，臺北的卡店中流傳著一段耳語：�
 各位讀者們好，我是臺北的休閒指揮官兼近代玩家阿詹，很高興有機會能跟大家分享套牌思路。
 上週 Magic Star 舉辦了十週年近代賽，冠軍獎品是豪華的霓虹閃 [Cavern of Souls](https://scryfall.com/card/lci/410b/cavern-of-souls) ，筆者也被這大獎吸引，參加了本次的比賽。
 在參加比次比賽前，筆者打了兩場 MIT 第八輪預選賽，都是使用伊捷龍侯參賽。伊捷龍侯作為 MH2 上市後的強勢套牌。在經歷了魔戒與 MH3 後，其中雖有大大小小的補強，但於賽場的出場率卻是越發降低（參考 [Mtggoldfish](https://www.mtggoldfish.com/metagame/modern#paper) 網站）。在準備本次比賽時，牌友[王靖](https://guildmagesforum.tw/tags/faintmama/)傳給我的一篇文章中，有一副套牌深深地吸引了我的注意力，便是今天的主角**伊捷水獺行侶**。身為休閒指揮官玩家，怎麼能不試試這帥氣的構築呢？於是本次比賽便選用了伊捷水獺行侶出戰。
-
+ 
 ## 構築
 	
 首先先來介紹本次的主角 [Lutri, the Spellchaser](https://scryfall.com/card/iko/227/lutri-the-spellchaser)
+
 >行侶～你起始你起始套牌中各非地牌的名稱均不相同。
 >(If this card is your chosen companion, you may put it into your hand from outside the game for {3} as a sorcery.) 
 閃現
@@ -53,8 +55,6 @@ excerpt: "九月三十號星期一，臺北的卡店中流傳著一段耳語：�
 地牌的部分沒有被 [Lutri, the Spellchaser](https://scryfall.com/card/iko/227/lutri-the-spellchaser) 限制，我只是將我手邊的地牌放入，個人認為找地應該需要 9 ~ 10 張，刺探地 2 張會比較理想。
 
 備牌也是常見的墳場對策， [Surgical Extraction](https://scryfall.com/card/2x2/94/surgical-extraction) 、小掃場，比較特別的是 [Threads of Disloyalty](https://scryfall.com/card/bok/56/threads-of-disloyalty) ，可以拿來搶對手的小費優秀生物，不論斷對手節奏或者單純開路都相當優秀。
-
----
  
 ## 對局
 
@@ -79,8 +79,6 @@ BO3的第一場對局是我們最弱的時候，因為不會知道該扣什麼�
 
 **第五輪 波洛斯能量 1：1 後手**
 第一場爆地沒辦法；第二場透過小掃場與 [Cast into the Fire](https://scryfall.com/card/ltr/118/cast-into-the-fire) 及 [Fire // Ice](https://scryfall.com/card/dmr/215/fire-ice) 撐過前期，後來就贏下了；第三場時間不夠，但成功進入垃圾時間，個人認為有機會獲勝。
-
----
 
 ## 心得
 	
